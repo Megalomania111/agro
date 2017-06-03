@@ -1,0 +1,352 @@
+body {
+	background-color: #fff;
+}
+
+.basket_page {
+	margin-top: 13px;
+	margin-bottom: 50px;
+}
+.basket_page .block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+}
+.basket_page h2 {
+	color: #282828;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.basket_butt {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 41px;
+}
+.basket_butt button:first-child {
+	margin-right: 25px;
+	width: 250px;
+	height: 44px;
+	background-color: #A4C83D;
+	color: #fffefe;
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 19px;
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	box-shadow: 0px 4px 0px #728a2f;
+}
+.basket_butt button:last-child {
+	height: 20px;
+	color: #272727;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 19px;
+	outline: none;
+	border: none;
+	background-color: #fff;
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	
+}
+.basket_butt button:last-child::after{
+	position: absolute;
+	content: '';
+	bottom: -3px;
+	left: 0;
+	width: 100%;
+	height: 0;
+	display: block;
+	border-bottom: 1px dashed #a4c83d;
+}
+.basket_tools {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 17px;
+	padding-bottom: 11px;
+	border-bottom: 1px solid #e8e8e8;
+}
+.basket_tools p {
+	color: #272727;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+}
+.basket_tools p:first-child {
+	margin-left: 77px;
+}
+.basket_tools p:nth-child(2) {
+	margin-left: 243px;
+}
+.basket_tools p:nth-child(3) {
+	margin-left: 72px;
+}
+.basket_tools p:nth-child(4) {
+	margin-left: 172px;
+}
+.basket_tools p:nth-child(5) {
+	margin-left: 90px;
+}
+.basket_card {
+	border-bottom: 1px solid #e8e8e8;
+	min-height: 88px;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+}
+.basket_card_img {
+	width: 66px;
+	height: 66px;
+	position: relative;	
+	overflow: hidden;				
+}
+.basket_card_img img {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.basket_card_info {
+	width: 315px;
+	height: auto;
+	margin-left: 11px;
+	margin-top: 12px;
+
+	
+}
+.basket_card_info a {
+	text-decoration: none;
+}
+.basket_card_info .card_info_title{
+	min-height: 18px;
+}
+
+.discript_brand span,
+.discript_country span {
+	font-weight: 500;
+}
+.basket_card h5 {
+	color: #272727;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	margin-bottom: 7px;	
+}
+.basket_card_status {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-top: 11px;
+	margin-left: 100px;
+	width: 130px;
+}
+.basket_card .product_price {
+	color: #272727;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 400;
+}
+.basket_card .product_status  {
+	color: #a4c83d;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 500;
+	margin-top: 7px;
+}
+
+.basket_card_info .card_info_code{
+	margin-top: 5px;
+	width: 223px;
+}
+
+.basket_card_info .card_info_code p {
+	color: #9e9e9e;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 12px;	
+}
+
+
+
+
+.basket_card_brand {
+	margin-top: 12px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	height: auto;
+	width: 80px;
+	height: 80px;
+	position: relative;
+}
+.basket_card_brand img {
+	width: auto;
+	height: auto;
+}
+
+
+
+
+
+
+.bascard_status_right {
+	margin-left: 84px;
+}
+
+
+
+.opt-quontity input {
+	width: 35px;
+	border: none;
+	outline: none;
+	background-color: #FFF;
+	text-align: center;
+	color: #272727;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 21px;
+}
+.opt-quontity .btns{
+	width: 13px;
+	height: 13px;
+	background-color: #EAA926;
+	border: none;
+	outline: none;
+	color: #fff;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+}
+.opt-quontity .quont-minus::after {
+	position: absolute;
+	left: 3px;
+	top: 6px;
+	width: 7px;
+	height: 1px;
+	background-color: #fff;
+	content: ''; 
+
+}
+.opt-quontity .quont-plus::after {
+	position: absolute;
+	left: 3px;
+	top: 6px;
+	width: 7px;
+	height: 1px;
+	background-color: #fff;
+	content: ''; 
+
+}
+
+.opt-quontity .quont-plus::before {
+	position: absolute;
+	left: 6px;
+	top: 3px;
+	width: 1px;
+	height: 7px;
+	background-color: #fff;
+	content: ''; 
+
+}
+.opt-quontity span {
+	color: #272727;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 21px;
+	margin-right: 6px;
+}
+.opt-quontity {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 8px;
+}
+
+.basket_card_status_total {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	
+	margin-top: 11px;
+	margin-left: 95px;
+	width: 113px;
+}
+.basket_card_status_total .product_price{
+	font-weight: 500;
+}
+
+.total_price_text {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 10px;
+	-webkit-justify-content: flex-end;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.total_price_text p,
+.card_total_price {
+	color: #272727;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+.basket_cards {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	height: auto;
+}
