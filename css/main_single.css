@@ -293,7 +293,7 @@ body {
 }
 .oem_block {	
 	padding-top: 28px;
-	padding-bottom: 29px;
+	padding-bottom: 14px;
 
 	border-bottom: 1px solid #e0e0e0;
 	display: -webkit-flex;
@@ -338,13 +338,14 @@ body {
 	border-bottom: 3px solid #3d2923;
 	margin-right: 12px;
 	text-decoration: none;
+	margin-bottom: 15px;
 }
 
 
 
 /*Применение */
 .primenenie {
-	min-height: 860px;
+	min-height: auto;
 }
 .primenenie_block {
 	border-bottom: 1px solid #e0e0e0;
@@ -397,6 +398,7 @@ body {
 	width: 16.6%;
 	height: 23px;
 	margin-bottom: 8px;
+	min-width: 165px;
 }
 .primenenie_list a {
 	display: inline-block;
@@ -549,7 +551,7 @@ body {
 /*описание товара. правая часть. таблица*/
 .discript_block_right {
 	width: 50%;
-	height: 256px;
+	min-height: 256px;
 	border: 2px solid #bdbdbd;
 	padding: 19px 19px 17px 20px;
 }
@@ -800,7 +802,7 @@ body {
 	padding-left: 40px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
-	box-shadow: 0px 4px 0px #728a2f;
+	box-shadow: 0px 3px 0px #728a2f;
 }
 .priceline_vkorzinu:after {
 	position: absolute;
@@ -846,7 +848,7 @@ body {
 	padding-left: 20px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
-	box-shadow: 0px 4px 0px #728a2f;	
+	box-shadow: 0px 3px 0px #728a2f;	
 }
 .priceline_status .product_status {
 	color: #a4c83d;
@@ -864,14 +866,19 @@ body {
 }
 .priceline_img {
 	margin-top: 25px;
+	margin-bottom: 20px;
 }
 .priceline img {
 	width: auto;
 	height: auto;
 }
-.dostavka {
+.analogs {
 	width: 48%;
-	height: auto;
+	max-width: 243px;
+	max-height: 250px;
+	padding: 18px 0 5px 0;
+	-webkit-box-shadow: 0px 0px 1px 2px #F0F0F0;
+	        box-shadow: 0px 0px 1px 2px #F0F0F0;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -883,8 +890,31 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.dostavka_line {
+.product_block_right .analogs h5 {
+	color: #3d2923;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 500;
+	margin-left: 12px;
+	margin-bottom: 15px;
+}
+.analogs_blocks {
+	width: 100%;
+	height: auto;
 	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	
+}
+.analogs_blocks_line {
+		display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
@@ -894,60 +924,44 @@ body {
 	-ms-justify-content: space-between;
 	-o-justify-content: space-between;
 	justify-content: space-between;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
+	padding: 7px 20px 3px 12px;
+	border-bottom: 1px solid #e0e0e0;
 }
-.dostavka_line p {
-	color: #272727;
-	font-size: 14px;
-	line-height: 14px;
-	font-weight: 500;
+.analogs_blocks_line:last-child {
+	border-bottom: none;
 }
-.dostavka_town {
-	color: #eaa926;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	position: relative;
-	padding-right: 20px;
+.analogs_img {
+	width: 60px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
 }
-.dostavka_line > div {
-	position: relative;
+.analogs_img img {
+	    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.dostavka_town:after {
-	position: absolute;
-	font-family: fontawesome !important;
-	color: #eaa926;
-	top: -1px;
-	right: -1px;
-	content: '\f078';
-	font-size: 18px;
+.analogs .product_title {
+    color: #212121;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-bottom: 6px;
+    width: 100%;
 }
-.dostavka_line .choose_town_block {
-	left: -281px;
-	top: 21px;
+.analogs .product_price {
+    color: #a4c83d;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
 }
-.dostavka > p {
-	color: #eaa926;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 14px;
-	margin-top: 14px;
-}
-.dostavka_price p {
-	color: #272727;
-	font-size: 12px;
-	font-weight: 400!important;
-	line-height: 12px;	
-}
-.dostavka_price {
-	margin-top: 8px;
-}
+
 .product_block_right .discript_brand span,
 .product_block_right .discript_country span {
 	font-weight: 500;

@@ -92,14 +92,12 @@ jQuery(document).ready(function(){
 
 	// сортировка выдачи товара (блочно/линиями)
 	jQuery('.displaying_icons_block').click(function() {
-		jQuery(".sort_result_minicards").removeClass("active");
-		jQuery(".sort_result_cards").addClass("active");
+		jQuery(".card").removeClass("card_mini");
 		jQuery(this).addClass("active");
 		jQuery(".displaying_icons_line").removeClass("active");
 	});
 	jQuery('.displaying_icons_line').click(function() {
-		jQuery(".sort_result_cards").removeClass("active");
-		jQuery(".sort_result_minicards").addClass("active");
+		jQuery(".card").addClass("card_mini");
 		jQuery(this).addClass("active");
 		jQuery(".displaying_icons_block").removeClass("active");
 	});
@@ -212,6 +210,8 @@ jQuery(document).ready(function(){
 	// 	}, delay);
 	// });
 
+
+	// каталог
 	$(".filtr_tovarov_button").click(function(){
         $(".filtr").toggleClass("active");
         $(".filtr_tovarov_button").toggleClass("active");
@@ -220,8 +220,50 @@ jQuery(document).ready(function(){
       $(".side-bar-cross").click(function(){
         $(".filtr").toggleClass("active");
         $(".filtr_tovarov_button").toggleClass("active");
-       
       });
+
+
+      // каталог справочник
+	$(".filtr_spravoch_button").click(function(){
+        $(".filtr").toggleClass("active");
+        $(".filtr_spravoch_button").toggleClass("active");
+        
+      });
+      $(".side-bar-cross").click(function(){
+        $(".filtr").toggleClass("active");
+        $(".filtr_spravoch_button").toggleClass("active");
+      });
+
+
+  // адаптивное меню
+      $(".media_menu button").click(function(){
+      	 $(".adaptive_menu").toggleClass( "active", 4000, "easeInQuad" );
+        
+        $(".media_menu button").toggleClass("active");
+
+      });
+	
+// $(document).mouseup(function (e) {
+//         var container = $("adaptive_menu");
+// 	    if (container.has(e.target).length === 0){
+// 	        container.hide();
+// 	    }
+// });
+	// jQuery(document).click(function(event) {
+	//      if (!jQuery(event.target).closest(jQuery(".adaptive_menu")).length){
+	//       jQuery(".adaptive_menu").toggleClass('active');
+	//      }
+	//      event.stopPropagation();
+	//  });
+
+
+	
+	// вызов селектов каталога
+      $(".chosen-select").chosen(); 
+      $(".chosen-select").chosen({no_results_text: "Неправильный запрос."}); 
+
+    
+      
 });
 
 

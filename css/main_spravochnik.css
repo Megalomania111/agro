@@ -31,7 +31,8 @@ body {
 /*
 блок фильтр*/
 .filtr {
-	max-width: 255px; 
+	max-width: 255px;
+	min-width: 255px;  
 	height: auto;
 	width: 23.19%;
 	display: -webkit-flex;
@@ -44,6 +45,7 @@ body {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	flex-direction: column;
+	margin-right: 10px;
 }
 .filtr h3 {
 	color: #272727;
@@ -56,6 +58,7 @@ body {
 	padding: 15px 7px 12px 6px;
 	border: 1px solid #f6f6f6;
 	border-bottom: none;
+	    min-height: 83px;
 }
 .filtr_block:nth-child(2) {
 	margin-top: 18px;
@@ -342,27 +345,24 @@ body {
 	padding-top: 25px;
 	width: 100%;
 	height: auto;
-	display: none;
-	-webkit-justify-content: space-between;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-.spravoch_selected.active,
-.spravoch_selected:active {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
+	
 .spravoch_selected_item {
 	max-width: 260px;
 	width: 31.6%;
 	min-height: 350px;
+	min-width: 233px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -561,4 +561,10 @@ body {
 	left: 0;
 	content: '\f053';
 	font-size: 12px;
+}
+
+
+
+.filtr_spravoch_button {
+	display: none;
 }

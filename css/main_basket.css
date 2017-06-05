@@ -4,7 +4,7 @@ body {
 
 .basket_page {
 	margin-top: 13px;
-	margin-bottom: 50px;
+
 }
 .basket_page .block {
 	display: -webkit-flex;
@@ -116,6 +116,40 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;	
+	position: relative;	
+}
+.basket_card:after{
+	position: absolute;	
+	right: 0;	
+	top: 50%;	
+	font-family: fontawesome !important;
+	color: #a4c83d;
+	cursor: pointer;	
+	content: '\f00d';
+	font-size: 20px;
+	display: none;
+}
+.basket_card:before{
+	position: absolute;	
+	right: 0px;
+    bottom: 2px;	
+	color: #a4c83d;
+	cursor: pointer;
+	width: 80px;
+	height: 29px;
+	padding-top: 6px;
+	padding-left: 7px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	content: 'Удалить';
+	font-size: 17px;
+	background-color: #E8E8E8;
+	border: 1px solid #e8e8e8;
+	display: none;
+
+}
+.basket_card:hover:after {
+	display: block;
 }
 .basket_card_img {
 	width: 66px;
@@ -310,6 +344,10 @@ body {
 	margin-top: 11px;
 	margin-left: 95px;
 	width: 113px;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
 }
 .basket_card_status_total .product_price{
 	font-weight: 500;

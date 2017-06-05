@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="libs/nouislider/nouislider.min.css">
 	<link rel="stylesheet" href="libs/easydropdown/easydropdown.css">
+		<link rel="stylesheet" href="libs/chosen-master/chosen.css">
 </head>
 
 <body>
@@ -177,68 +178,6 @@
 		</div>
 	</div>
 </div>
-
-<div class="popap_thanks hidden">
-	<div class="popap_thanks_content">
-		<div class="popap_thanks_main">
-			<a href="#" class="close-pop-up-ths"><i class="fa fa-times" aria-hidden="true"></i></a>
-			<img src="img/popap_thanks.png" alt="popap_thanks">
-			<h3>Ваша заявка <br>на обратный звонок принята</h3>
-			<p>Наши специалисты свяжуться с вами по указанному номеру телефона<br> 	в ближайшее время</p>
-		</div>
-	</div>
-</div>
-<div class="popap_call hidden">
-	<form  method="POST" class="popap_call_content">
-		<div class="popap_call_main">
-			<a href="#" class="close-pop-up"><i class="fa fa-times" aria-hidden="true"></i></a>
-			<h3>Заказать обратный звонок</h3>
-			<label for="name">
-				<p class="error-name hidden">Вы не указали свое имя</p>
-				<input type="text" class="popap_call_input inp_valid" name="name" placeholder="Ваше имя">
-			</label><br>
-
-			<label for="tel">
-				<p class="error-tel hidden">Вы не указали номер телефона</p>
-				<input type="tel" class="popap_call_input inp_valid" name="tel" placeholder="Номер телефона">
-			</label>
-			<input type="submit" value="Отправить" class="popap_call-submit">
-		</div>
-	</form>
-</div>
-
-
-<div class="popap_vostanovl hidden">
-	<form  method="POST" class="popap_vostanovl_content">
-		<div class="popap_vostanovl_main">
-			<a href="#" class="close-pop-up"><i class="fa fa-times" aria-hidden="true"></i></a>
-			<h3>Восстановление пароля</h3>
-			<p>Введит адрес почты, который вы указали <br> при регистрации.</p>
-			<label for="mail">
-				<p>Ваш e-mail</p>
-
-				<input type="mail" class="popap_vostanovl_input inp_valid" name="mail">
-				<p class="error-mail hidden">Вы не указали свою почту</p>
-			</label>
-			<input type="submit" value="напомнить пароль" class="popap_vostanovl-submit">
-		</div>
-	</form>
-</div>
-
-
-
-<div class="popap_vostanovl_otpravl hidden">
-	<div class="popap_vostanovl_otpravl__content">
-		<div class="popap_vostanovl_otpravl__main">
-			<a href="#" class="close-pop-up-ths"><i class="fa fa-times" aria-hidden="true"></i></a>
-
-			<img src="img/popap_thanks.png" alt="popap_thanks">
-			<h3>Пароль отправлено!</h3>
-			<p>На вашу почту отправлено письмо с 
-				подтверждением <span>agroagro@gmail.com</span></p>
-			</div>
-		</div>
-	</div>
 
 <div class="big-block menu">
 	<div class="block">
@@ -586,7 +525,69 @@
 		</div>
 		<div class="katalogzapch">
 				<h2>Каталог запчастей</h2>
-				<div class="katalog_standart ">
+				<div class="filtr_drop-down">
+				<div class="drop-down_list">
+					<h5>Тип техники</h5>
+					<select data-placeholder="Например, пресс-подборщик" class="chosen-select" tabindex="-1">
+			            <option value=""></option>
+			            <option value="">Двигатель</option>
+			            <option value="">Жатка</option>
+			            <option value="">Жатка кукурузная</option>
+			            <option value="">Комбайн зерноуборочный</option>
+			            <option value="">Комбайн кормоуборочный</option>
+			            <option value="">Пресс-подборщик</option>
+			            <option value="">Трактор</option>
+			            <option value="">Рапс</option>
+			         </select>
+				</div>
+				<div class="drop-down_list">
+					<h5>Марка</h5>
+					<select data-placeholder="Например, GERINGHOFF" class="chosen-select" tabindex="-1">
+						 <option value=""></option>
+			            <option value="">Claas</option>
+			            <option value="">Geringhoff</option>
+			            <option value="">Fendt</option>
+			            <option value="">Sampo</option>
+			            <option value="">Case Ih</option>
+			            <option value="">New Holland</option>
+			            <option value="">Fortschritt</option>
+			            <option value="">John Deeree</option>
+			            <option value="">Deutz</option>
+			            <option value="">Oros</option>
+			            
+			         </select>
+				</div>
+				<div class="drop-down_list">
+					<h5>Модель</h5>
+					<select data-placeholder="UX 5200" class="chosen-select" tabindex="-1">
+						 <optgroup label="Claas">
+				            <option value=""></option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				          <optgroup label="Geringhoff">
+				            <option value=""></option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				          <optgroup label="Geringhoff">
+				            <option value=""></option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+			         </select>
+				</div>
+			</div>
+			<div class="katalog_standart ">
 				<div class="katalogzapch_blocks">
 					<div class="katalogzapch_block katalogzapch_kombain">
 						<div class="katalogzapch_block_img">
@@ -874,6 +875,7 @@
 	<div class="hidden"></div>
 
 	<script src="libs/jquery/jquery-3.2.1.slim.min.js"></script>
+		<script src="libs/chosen-master/chosen.jquery.js"></script>
 	<script src="libs/nouislider/nouislider.min.js"></script>
 	<script src="libs/easydropdown/jquery.easydropdown.min.js"></script>
 	<script src="js/common.js"></script>	
