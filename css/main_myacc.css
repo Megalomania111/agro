@@ -53,6 +53,11 @@ body {
 	font-weight: 500;
 	line-height: 18px;
 	padding-bottom: 9px;
+	    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    -ms-transition: 0.2s all;
+    -o-transition: 0.2s all;
+    transition: 0.2s all;
 }
 .minimenu a.active,
 .minimenu a:active {

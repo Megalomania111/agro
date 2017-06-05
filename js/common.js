@@ -213,45 +213,52 @@ jQuery(document).ready(function(){
 
 	// каталог
 	$(".filtr_tovarov_button").click(function(){
-        $(".filtr").toggleClass("active");
-        $(".filtr_tovarov_button").toggleClass("active");
+        $(".filtr").addClass("active");
+        $(".filtr_tovarov_button").addClass("active");
         
       });
-      $(".side-bar-cross").click(function(){
-        $(".filtr").toggleClass("active");
-        $(".filtr_tovarov_button").toggleClass("active");
+      $("a.close_filtr").click(function(){
+        $(".filtr").removeClass("active");
+        $(".filtr_tovarov_button").removeClass("active");
       });
 
 
       // каталог справочник
 	$(".filtr_spravoch_button").click(function(){
-        $(".filtr").toggleClass("active");
-        $(".filtr_spravoch_button").toggleClass("active");
+        $(".filtr").addClass("active");
+        $(".filtr_spravoch_button").addClass("active");
         
       });
-      $(".side-bar-cross").click(function(){
-        $(".filtr").toggleClass("active");
-        $(".filtr_spravoch_button").toggleClass("active");
+      $("a.close_filtr").click(function(){
+        $(".filtr").removeClass("active");
+        $(".filtr_spravoch_button").removeClass("active");
       });
 
 
-  // адаптивное меню
-      $(".media_menu button").click(function(){
-      	 $(".adaptive_menu").toggleClass( "active", 4000, "easeInQuad" );
-        
-        $(".media_menu button").toggleClass("active");
 
-      });
-	
-// $(document).mouseup(function (e) {
-//         var container = $("adaptive_menu");
-// 	    if (container.has(e.target).length === 0){
-// 	        container.hide();
-// 	    }
-// });
+
+
+// Меню на главной/ адаптивное меню
+jQuery(document).ready(function(){
+jQuery(".media_menu button").click(function() {
+		jQuery(".media_menu button").toggleClass("active");
+		 jQuery(".adaptive_menu").toggleClass( "active");
+		  jQuery(".adaptive_menu_block").toggleClass( "active");
+		jQuery("html, css").toggleClass("toggle_overflow");
+
+	});
+});
+
+
+$(document).mouseout(function (e) {
+        var container = $("choose_town_block ");
+	    if (container.has(e.target).length === 0){
+	        container.hide();
+	    }
+});
 	// jQuery(document).click(function(event) {
-	//      if (!jQuery(event.target).closest(jQuery(".adaptive_menu")).length){
-	//       jQuery(".adaptive_menu").toggleClass('active');
+	//      if (!jQuery(event.target).closest(jQuery(".choose_town_block ")).length){
+	//       jQuery(".choose_town_block ").toggleClass('active');
 	//      }
 	//      event.stopPropagation();
 	//  });

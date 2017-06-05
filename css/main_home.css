@@ -12,10 +12,13 @@
 	height: 400px;
 	position: relative;
 	overflow: hidden;
-	background-size: cover;	
+	
 }
   .banner_main img {
-	width: auto;
+  	    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+	width: auto!important;
 	height: 100%;
 	position: absolute;
 	top: 50%;

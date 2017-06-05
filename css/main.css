@@ -2236,24 +2236,24 @@ p.forgot_password {
 .adaptive_block_header {
 	display: none;
 	-webkit-transition: 0.5s all ease;
-	   -moz-transition: 0.5s all ease;
-	    -ms-transition: 0.5s all ease;
-	     -o-transition: 0.5s all ease;
-	        transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	transition: 0.5s all ease;
 }
 .adaptive_line {
 	width: 100%;
 	background-color: #272727;
 	min-height: 30px;
-			display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-	-webkit-justify-content: space-between;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -2262,12 +2262,13 @@ p.forgot_password {
 }
 
 .adaptive_line .basket {
+	position: absolute;
 	min-width: 55px;
 	height: 26px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 	background-color: #FFF;
-	position: relative;
+	left: 10px;
 	text-decoration: none;
 }
 .adaptive_line .basket:before {
@@ -2309,9 +2310,6 @@ p.forgot_password {
 .adaptive_line .topline_privateroom {
 	min-width: 150px;
 	min-height: 26px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	background-color: #FFF;
 	padding-left: 8px;
 	padding-right: 8px;
 	-webkit-box-align: center;
@@ -2322,16 +2320,21 @@ p.forgot_password {
 .adaptive_line .privateroom_lang {
 	margin-left: 7px;
 }
+.adaptive_line .privateroom_lang:after {
+	background-color: #fff;
+}
 .adaptive_line .topline_privateroom a {
-	color: #272727;
+	color: #fff;
 }
 .media_menu {
 	min-width: 55px;
+	position: absolute;
+	right: 10px;
 	height: 26px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
 	background-color: #FFF;
-	position: relative;
+	z-index: 100;
 	text-decoration: none;
 }
 .media_menu button {
@@ -2395,67 +2398,10 @@ p.forgot_password {
 	-o-transition: 0.1s all;
 	transition: 0.1s all;
 }
-.adaptive_menu {
+
+.close_filtr {
 	display: none;
-	position: absolute;
-	width: 230px;
-	min-height: 250px;
-	right: -15px;
-	top: 46px;
-	background-color: #272727;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	z-index: 10;
-	-webkit-box-shadow: 0px 0px 3px #FFF;
-	box-shadow: 0px 0px 3px #FFF;
-
 }
-.adaptive_menu.active,
-.adaptive_menu:active {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-}
-.adaptive_menu li{
-	position: relative;
-	height: 40px;
-}
-.adaptive_menu a {
-	display: block;
-	padding: 13px 25px;
-	height: 100%;
-
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 15px;
-	font-weight: 500;
-	text-transform: uppercase;
-	position: relative;
-	-webkit-transition: 0.2s all;
-	-moz-transition: 0.2s all;
-	-ms-transition: 0.2s all;
-	-o-transition: 0.2s all;
-	transition: 0.2s all;
-	position: relative;
-}
-.adaptive_menu a:hover {
-	color: #eaa926;
-	border-bottom: 3px solid #EAA926;
-}
-
-
 .adaptive_line_search {
 	width: 	100%;
 	height: auto;
@@ -2480,8 +2426,7 @@ p.forgot_password {
 	padding: 10px;		
 }
 .adaptive_line__phone {
-	width: 	100%;
-	max-width: 	450px;
+
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -2524,6 +2469,122 @@ p.forgot_password {
 	width: 18px;
 	height: 18px;
 	top: 0px;
-	left: 8px;
+	left: 6px;
 	content: ' ';
+}
+.adaptive_line_search .choose_town_link {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	min-width: 166px;
+}
+.adaptive_line_search .choose_town_block {
+	left: 0;
+}
+.adaptive_line_search .search_form {
+	max-width: 100%;
+	margin: auto;
+}
+.adaptive_line_search .search_form input,
+.adaptive_line_search .searchlist {
+	max-width: 100%;
+}
+.adaptive_line_search .choose_town {
+	width: 100%;
+	height: auto;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.adaptive_line_search .town_search {
+	max-width: 100%;
+}
+.adaptive_line_search .town_link:after {
+	top: -1px;
+}
+
+.adaptive_menu_block {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #272727;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	display: none;
+	-webkit-overflow-scrolling: touch;
+	bottom: 0;
+	right: 0;
+	/* overflow: auto; */
+}
+.adaptive_menu_block.active{
+	display: block;
+}
+.adaptive_menu {
+	display: none;
+	
+	
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+.adaptive_menu.active,
+.adaptive_menu:active {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.adaptive_menu li{
+	position: relative;
+	height: 40px;
+}
+.adaptive_menu a {
+	display: block;
+	padding: 13px 25px;
+	height: 100%;
+
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	position: relative;
+	-webkit-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+	-ms-transition: 0.2s all;
+	-o-transition: 0.2s all;
+	transition: 0.2s all;
+	position: relative;
+}
+.adaptive_menu a:hover {
+	color: #eaa926;
+	border-bottom: 3px solid #EAA926;
 }

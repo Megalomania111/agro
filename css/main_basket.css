@@ -132,8 +132,8 @@ body {
 .basket_card:before{
 	position: absolute;	
 	right: 0px;
-    bottom: 2px;	
-	color: #a4c83d;
+    bottom: 5px;	
+	color: #272727;
 	cursor: pointer;
 	width: 80px;
 	height: 29px;
@@ -143,8 +143,8 @@ body {
 	border-radius: 5px;
 	content: 'Удалить';
 	font-size: 17px;
-	background-color: #E8E8E8;
-	border: 1px solid #e8e8e8;
+	background-color: #f6f6f6;
+	border: 1px solid #f6f6f6;
 	display: none;
 
 }

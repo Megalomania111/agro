@@ -385,20 +385,16 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	-webkit-justify-content: space-between;
-	-moz-justify-content: space-between;
-	-ms-justify-content: space-between;
-	-o-justify-content: space-between;
-	justify-content: space-between;
+
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 .primenenie_list li {
-	width: 16.6%;
+	
 	height: 23px;
 	margin-bottom: 8px;
-	min-width: 165px;
+	margin-right: 15px;
 }
 .primenenie_list a {
 	display: inline-block;
@@ -511,7 +507,7 @@ body {
 	justify-content: space-between;
 }
 .discript_block_left {
-	width: 50%;
+	width: 48%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -708,7 +704,7 @@ body {
 
 .product_block_right {
 	width: 50%;
-	min-height: 480px;
+	min-height: 390px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
