@@ -20,7 +20,7 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.onenews h2 {
+.onenews h1 {
 	color: #272727;
 	font-size: 24px;
 	font-weight: 500;
@@ -101,7 +101,7 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.onenews--right_title h3 {
+.onenews--right_title h2 {
 	color: #272727;
 	font-size: 16px;
 	line-height: 16px;

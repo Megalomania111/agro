@@ -19,7 +19,7 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.formalization h2 {
+.formalization h1 {
 	color: #272727;
 	font-size: 24px;
 	font-weight: 500;
@@ -68,7 +68,7 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.formalization_left h3 {
+.formalization_left h2 {
 	color: #272727;
 	font-size: 18px;
 	font-weight: 500;

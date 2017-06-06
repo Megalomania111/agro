@@ -235,23 +235,23 @@
 	</div>
 
 	
-		<div class="popap_call ">
-			<form  method="POST" class="popap_call_content">
+		<div class="popap_call">
+			<div class="popap_call_content">
 				<div class="popap_call_main">
 					<a href="#" class="close-pop-up"><i class="fa fa-times" aria-hidden="true"></i></a>
 					<h3>Заказать обратный звонок</h3>
 					<label for="name">
 						<p class="error-name hidden">Вы не указали свое имя</p>
-						<input type="text" class="popap_call_input inp_valid" name="name" placeholder="Ваше имя">
+						<input type="text"  id="popap_call_name" class="popap_call_input" name="name" placeholder="Ваше имя">
 					</label><br>
 
 					<label for="tel">
 						<p class="error-tel hidden">Вы не указали номер телефона</p>
-						<input type="tel" class="popap_call_input inp_valid" name="tel" placeholder="Номер телефона">
+						<input type="tel" id="popap_call_tel" class="popap_call_input" name="tel" placeholder="Номер телефона">
 					</label>
-					<input type="submit" value="Отправить" class="popap_call-submit">
+					<button class="popap_call-submit">Отправить</button>
 				</div>
-			</form>
+			</div>
 		</div>
 
 	<div class="big-block menu">
@@ -795,6 +795,7 @@
 
 		<script src="libs/jquery/jquery-3.2.1.slim.min.js"></script>
 		<script src="libs/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+		<script src="libs/jquery.mask.min.js"></script>
 		<script src="js/common.js"></script>	
 	</body>
 	</html>

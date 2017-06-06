@@ -18,14 +18,14 @@ body {
 	-o-justify-content: space-between;
 	justify-content: space-between;
 }
-.main_catalog h2 {
+.main_catalog h1 {
 	color: #272727;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 24px;
 	
 }
-.katalogzapch h2 {
+.katalogzapch h1 {
 	padding-left: 8px;
 }
 
@@ -395,7 +395,7 @@ body {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-.katalogzapch_block h3 {
+.katalogzapch_block h2 {
 	color: #eaa926;
 	font-size: 21px;
 	line-height: 21px;
@@ -461,7 +461,7 @@ a.katal_all_parts:before {
 	transform: translate(-50%, -50%);
 	z-index: -1;
 }
-.katalogzapch h2 {
+.katalogzapch h1 {
 	margin-bottom: 18px;
 }
 .katalogzapch_podbor,
@@ -1011,176 +1011,3 @@ font-size: 14px;
 }
 
 
-/*
-фильтры с выпадающими списками*/
-.filtr_drop-down {
-	width: 100%;
-	height: auto;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-box-pack: start;
-	-webkit-justify-content: flex-start;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
-	margin-bottom: 35px;
-	padding-left: 8px;
-	
-}
-.filtr_drop-down > div {
-	width: 32.4%;
-	height: auto;
-	position: relative;
-	margin-right: 2px;
-}
-
-.drop-down_list {
-	height: 58px !important;
-	position: relative;
-}
-.filtr_drop-down select,
-.filtr_drop-down .chosen-container,
-.filtr_drop-down .chosen-single {
-	width: 100%!important;
-	height: 100% !important;
-	outline: none;
-}
-
-
-.filtr_drop-down li.active-result {
-	color: #272727!important;
-	font-size: 14px!important;
-	line-height: 14px!important;
-	font-weight: 400 !important;
-	font-family: "Fira Sans"!important;
-	padding: 5px 0 5px  13px !important;
-}
-
-.filtr_drop-down .chosen-results li.highlighted {
-	color: #a4c83d!important;
-	background-color: #FFF!important;
-	background-image: none!important;
-}
-.filtr_drop-down .chosen-drop {
-	border: none!important;
-}
-.filtr_drop-down input[type="text"] {
-	border: none!important;
-	border-bottom: 1px solid #dedede!important;
-	padding-left: 16px !important;
-	background: none !important;
-	position: relative!important;
-}
-.filtr_drop-down .chosen-search:after {
-
-	position: absolute;
-	font-family: fontawesome !important;
-	color: #444444;
-	top: 8px;
-	right: 10px;
-	content: '\f002';
-	font-size: 14px;
-}
-.filtr_drop-down .chosen-search {
-	padding: 3px 0!important;
-}
-.filtr_drop-down .chosen-drop {
-	margin-top: 4px!important;
-}
-.filtr_drop-down .chosen-single {
-	border: none !important;
-	background: none !important;
-	color: #272727!important;
-	font-size: 14px!important;
-	line-height: 14px!important;
-	font-weight: 300 !important;
-	font-family: "Fira Sans"!important;
-	box-shadow: 0px 0px 8px 1px #dedede!important;
-}
-.filtr_drop-down .chosen-single span {
-	margin-top: 35px;
-	margin-left: 3px;
-	padding-left: 5px;
-}
-
-
-
-
-.filtr_drop-down h5{
-	color: #272727!important;
-	font-size: 14px!important;
-	line-height: 14px!important;
-	font-weight: 500 !important;
-	position: absolute;
-	top: 16px;
-	left: 16px;
-	text-transform: uppercase;
-	
-}
-
-.filtr_drop-down .chosen-single div b {
-	background: none !important;
-	
-}
-.filtr_drop-down .chosen-single:after {
-	position: absolute!important;
-	font-family: fontawesome !important;
-	color: #444;
-	top: 21px;
-	right: 12px;
-	content: '\f078';
-	font-size: 22px;
-}
-.filtr_drop-down .chosen-container-active.chosen-with-drop .chosen-single:after {
-	content: '\f077';
-}
-
-.drop-down_list:last-child .chosen-drop {
-	max-width: 480px;
-	min-width: 480px;
-	right: 0;
-
-	overflow: auto;
-}
-
-.drop-down_list:nth-child(2) .chosen-drop {
-	max-width: 270px;
-	min-width: 270px;
-	right: 0;
-	
-	overflow: auto;
-}
-.drop-down_list:nth-child(2) .chosen-results {
-	max-height: 230px;
-}
-.drop-down_list:nth-child(1) .chosen-results {
-	max-height: 230px;
-}
-.drop-down_list:nth-child(1) .chosen-drop {
-	max-width: 270px;
-	min-width: 270px;
-	right: 0;
-}
-.drop-down_list:last-child .chosen-results {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	max-height: 230px;
-}
-.drop-down_list:last-child li.active-result {
-	width: 28%;
-}
-.drop-down_list:last-child .group-result {
-	width: 100%;
-}

@@ -18,7 +18,7 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.basket_page h2 {
+.basket_page h1 {
 	color: #282828;
 	font-size: 24px;
 	font-weight: 500;

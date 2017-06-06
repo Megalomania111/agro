@@ -244,26 +244,26 @@
 				<h3>Создание аккаунта</h3>
 				<label for="name">
 					<p>Ваш имя</p>
-					<input type="text" class="popap_regist_input inp_valid" name="name">
-					
+					<input type="text" id="popap_regist_name" class="popap_regist_input" name="name">
 					<p class="error-name hidden">Вы не указали своё имя</p>
 				</label>
 				<label for="mail">
 					<p>Ваш e-mail</p>
-					<input type="mail" class="popap_regist_input inp_valid" name="mail">
-					<p class="error-name hidden">Вы не указали свою почту</p>
+					<input type="mail" id="popap_regist_mail" class="popap_regist_input" name="mail">
+					<p class="error-mail hidden">Вы не указали свою почту</p>
 				</label>
 				<label for="password">
 					<p>Пароль</p>
-					<input type="password" class="popap_regist_input inp_valid" name="password">
-					<p class="error-name hidden">Придумайте пароль</p>
+					<input type="password" id="popap_regist_password" class="popap_regist_input" name="password">
+					<p class="error-password hidden">Придумайте пароль</p>
 				</label>
 				<label for="verification_password">
 					<p>Подтвердите пароль</p>
-					<input type="password" class="popap_regist_input inp_valid" name="verification_password">
-					<p class="error-name hidden">Подтвердите пароль</p>
+					<input type="password" id="popap_regist_verification_password" class="popap_regist_input" name="verification_password">
+					<p class="error-verification_password hidden">Подтвердите пароль</p>
 				</label>
-				<input type="submit" value="зарегистрироваться" class="popap_regist-submit">
+				<button class="popap_regist-submit">зарегистрироваться</button>
+				
 				<div class="agreement">Регистрируясь, вы соглашаетесь с <a href="#" class="agreement_link">пользовательским 
 соглашеним.</a></div>
 				<span class="line"></span>

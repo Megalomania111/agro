@@ -54,7 +54,7 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.new_otzyv_form h3 {
+.new_otzyv_form h2 {
 	color: #212121;
 	font-size: 18px;
 	font-weight: 500;
@@ -173,9 +173,8 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.list_otzivov h3,
-.list_net_otzivov .product_title
-{
+.list_otzivov h2,
+.list_net_otzivov .product_title {
 	color: #212121;
 	font-size: 18px;
 	font-weight: 500;
@@ -183,7 +182,7 @@ body {
 	margin-bottom: 18px;
 	margin-top: 25px;
 }
-.list_net_otzivov > h3 {
+.list_net_otzivov > h2 {
 	margin-bottom: 43px;
 }
 .list_net_otzivov p {
@@ -307,7 +306,7 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.oem_block h3 {
+.oem_block h2 {
 	color: #272727;
 	font-size: 18px;
 	font-weight: 500;
@@ -352,7 +351,7 @@ body {
 	padding-top: 28px;
 	padding-bottom: 29px;
 }
-.primenenie_block h3 {
+.primenenie_block h2 {
 	color: #272727;
 	font-size: 18px;
 	font-weight: 500;
@@ -480,7 +479,7 @@ body {
 	display: -o-flex;
 	display: flex;
 }
-.discript_title h3 {
+.discript_title h2 {
 	color: #272727;
 	font-size: 18px;
 	font-weight: 500;
@@ -950,6 +949,7 @@ body {
     line-height: 12px;
     margin-bottom: 6px;
     width: 100%;
+    text-decoration: none;
 }
 .analogs .product_price {
     color: #a4c83d;

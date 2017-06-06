@@ -19,14 +19,14 @@ body {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.dostavka_oplata h2 {
+.dostavka_oplata h1 {
 	color: #272727;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 24px;
 	margin-bottom: 18px;
 }
-.dostavka_oplata h3 {
+.dostavka_oplata h2 {
 	color: #272727;
 	font-size: 18px;
 	font-weight: 500;

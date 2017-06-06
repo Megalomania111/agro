@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/main_spravochnik.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/chosen-master/chosen.css">
 </head>
 
 <body>
@@ -227,179 +228,125 @@
 
 <div class="big-block main_spravochnik">
 	<div class="block">
-		<div class="filtr_spravoch_button">
-			<div>
-				<p>фильтр</p>
-			</div>
-		</div>
 		<div class="filtr">
-			<h2>Фильтр справочника</h2>
-			<a href="#" class="close_filtr"><i class="fa fa-times" aria-hidden="true"></i></a>
-			<div class="filtr_block">
-				<form  method="POST" class="filtr_technica">
-					<h3>Тип техники</h3>
-					<label for="technica_dvigatel" class="technica_label">
-						<input type="checkbox" class="" name="technica_dvigatel" id="technica_dvigatel">
-						<p class="technica_text">Двигатель</p>
-					</label>
-					<label for="technica_jatka" class="technica_label">
-						<input type="checkbox" class="" name="technica_jatka" id="technica_jatka">
-						<p class="technica_text">Жатка</p>
-					</label>
-					<label for="technica_jatka_ku" class="technica_label">
-						<input type="checkbox" class="" name="technica_jatka_ku" id="technica_jatka_ku">
-						<p class="technica_text">Жатка кукурузная</p>
-					</label>
-					<label for="technica_kombain_zer" class="technica_label">
-						<input type="checkbox" class="" name="technica_kombain_zer" id="technica_kombain_zer">
-						<p class="technica_text">Комбайн зерноуборочный</p>
-					</label>
-					<label for="technica_kombain_korm" class="technica_label">
-						<input type="checkbox" class="" name="technica_kombain_korm" id="technica_kombain_korm">
-						<p class="technica_text">Комбайн кормоуборочный</p>
-					</label>
-					<label for="technica_press" class="technica_label">
-						<input type="checkbox" class="" name="technica_press" id="technica_press">
-						<p class="technica_text">Пресс-подборщик</p>
-					</label>
-					<label for="technica_traktor" class="technica_label">
-						<input type="checkbox" class="" name="technica_traktor" id="technica_traktor">
-						<p class="technica_text">Трактор</p>
-					</label>
-					<label for="technica_raps" class="technica_label">
-						<input type="checkbox" class="" name="technica_raps" id="technica_raps">
-						<p class="technica_text">Рапс</p>
-					</label>
-				</form>
+			<div class="analogs">
+				<h2>История просмотров</h2>
+				<div class="analogs_blocks">
+					<div class="analogs_blocks_line">
+						<div class="analogs_img">
+							<img src="img/formal_basket.png" alt="">
+						</div>
+						<div class="analogs_tools">
+							<a href="#" class="product_title">Шестерня бортовой  D-295, Z55 </a>
+							<p class="product_price">13 046 грн</p>
+						</div>
+					</div>
+					<div class="analogs_blocks_line">
+						<div class="analogs_img">
+							<img src="img/formal_basket.png" alt="">
+						</div>
+						<div class="analogs_tools">
+							<a href="#" class="product_title">Шестерня бортовой  D-295, Z55 </a>
+							<p class="product_price">13 046 грн</p>
+						</div>
+					</div>
+					<div class="analogs_blocks_line">
+						<div class="analogs_img">
+							<img src="img/formal_basket.png" alt="">
+						</div>
+						<div class="analogs_tools">
+							<a href="#" class="product_title">Шестерня бортовой  D-295, Z55 </a>
+							<p class="product_price">13 046 грн</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="filtr_block">
-				<form  method="POST" class="filtr_proizavod">
-					<h3>производитель</h3>
-					<div>
-						<label for="proizavod_class" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_class" id="proizavod_class">
-							<p class="technica_text">Claas</p>
-						</label>
-						<label for="proizavod_geringhoff" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_geringhoff" id="proizavod_geringhoff">
-							<p class="technica_text">Geringhoff</p>
-						</label>
-						<label for="proizavod_fendt" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_fendt" id="proizavod_fendt">
-							<p class="technica_text">Fendt</p>
-						</label>
-						<label for="proizavod_sampo" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_sampo" id="proizavod_sampo">
-							<p class="technica_text">Sampo</p>
-						</label>
-						<label for="proizavod_caseih" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_caseih" id="proizavod_caseih">
-							<p class="technica_text">Case Ih</p>
-						</label>
-						<label for="proizavod_new_holland" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_new_holland" id="proizavod_new_holland">
-							<p class="technica_text">New Holland</p>
-						</label>
-						<label for="proizavod_fortsch" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_fortsch" id="proizavod_fortsch">
-							<p class="technica_text">Fortschritt</p>
-						</label>
-						<label for="proizavod_johndeer" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_johndeer" id="proizavod_johndeer">
-							<p class="technica_text">John Deeree</p>
-						</label>
-						<label for="proizavod_deutz" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_deutz" id="proizavod_deutz">
-							<p class="technica_text">Deutz</p>
-						</label>
-						<label for="proizavod_oros" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_oros" id="proizavod_oros">
-							<p class="technica_text">Oros</p>
-						</label>
-
-						<label for="proizavod_example" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_example" id="proizavod_example">
-							<p class="technica_text">Oros</p>
-						</label>
-						<label for="proizavod_example" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_example" id="proizavod_example">
-							<p class="technica_text">Oros</p>
-						</label>
-						<label for="proizavod_example" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_example" id="proizavod_example">
-							<p class="technica_text">Oros</p>
-						</label>
-						<label for="proizavod_example" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_example" id="proizavod_example">
-							<p class="technica_text">Oros</p>
-						</label>
-						<label for="proizavod_example" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_example" id="proizavod_example">
-							<p class="technica_text">Oros</p>
-						</label>
-						<label for="proizavod_example" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_example" id="proizavod_example">
-							<p class="technica_text">Oros</p>
-						</label>
-						<label for="proizavod_example" class="technica_label">
-							<input type="checkbox" class="" name="proizavod_example" id="proizavod_example">
-							<p class="technica_text">Oros</p>
-						</label>
+			<div class="block_news">
+				<h2>Новости</h2>
+					<a href="#">
+						<div class="news_img">
+						<img src="img/news.png" alt="">
 					</div>
-				</form>
-			</div>
-			<div class="filtr_block">
-				<form  method="POST" class="filtr_model">
-					<h3>Модель</h3>
-					<div class="model_search">
-						<input type="text" class="inp_nazvanie_model" name="inp_nazvanie_model" placeholder="Введите название модели">
-						<button class="nazvanie_model_search"></button>
+					<div class="news_text">
+						<div class="news_title">
+							<h4>Христос воскрес!</h4>
+						</div>
+						<div class="news_descr">
+							<p>С христовым воскресеньм вас!</p>
+						</div>
 					</div>
-					<div>
-						<form action="POST">
-							<h4>Geringhoff</h4>
-							<label for="model_gering_2200" class="technica_label">
-								<input type="checkbox" class="" name="model_gering_2200" id="model_gering_2200">
-								<p class="technica_text">2200</p>
-							</label>
-							<label for="model_gering_4000" class="technica_label">
-								<input type="checkbox" class="" name="model_gering_4000" id="model_gering_4000">
-								<p class="technica_text">4000</p>
-							</label>
-							<label for="model_gering_3410" class="technica_label">
-								<input type="checkbox" class="" name="model_gering_3410" id="model_gering_3410">
-								<p class="technica_text">3410</p>
-							</label>
-							<label for="model_gering_2000" class="technica_label">
-								<input type="checkbox" class="" name="model_gering_2000" id="model_gering_2000">
-								<p class="technica_text">2000</p>
-							</label>
-							<label for="model_gering_7200" class="technica_label">
-								<input type="checkbox" class="" name="model_gering_7200" id="model_gering_7200">
-								<p class="technica_text">7200</p>
-							</label>
-							<label for="model_gering_5130" class="technica_label">
-								<input type="checkbox" class="" name="model_gering_5130" id="model_gering_5130">
-								<p class="technica_text">5130</p>
-							</label>
-						</form>
-						<form action="POST">
-							<h4>Class</h4>
-							<label for="model_class_2200" class="technica_label">
-								<input type="checkbox" class="" name="model_class_2200" id="model_class_2200">
-								<p class="technica_text">2200</p>
-							</label>
-							<label for="model_class_4000" class="technica_label">
-								<input type="checkbox" class="" name="model_class_4000" id="model_class_4000">
-								<p class="technica_text">4000</p>
-							</label>
-						</form>
-					</div>
-				</form>
+					</a>
+					
+				<div class="news_tools">
+					<p class="news_date">18.02.2017</p>
+					<a class="news_allnews" href="#">Все новости</a>
+				</div>
 			</div>
 		</div>
 		<div class="katalogspravoch">
-			<h2>Каталог справочника</h2>
+			<h1>Каталог справочника</h1>
+			<div class="filtr_drop-down">
+				<div class="drop-down_list">
+					<h5>Тип техники</h5>
+					<select data-placeholder="Например, пресс-подборщик" class="chosen-select" tabindex="-1">
+			            <option value=""></option>
+			            <option value="">Двигатель</option>
+			            <option value="">Жатка</option>
+			            <option value="">Жатка кукурузная</option>
+			            <option value="">Комбайн зерноуборочный</option>
+			            <option value="">Комбайн кормоуборочный</option>
+			            <option value="">Пресс-подборщик</option>
+			            <option value="">Трактор</option>
+			            <option value="">Рапс</option>
+			         </select>
+				</div>
+				<div class="drop-down_list">
+					<h5>Марка</h5>
+					<select data-placeholder="Например, GERINGHOFF" class="chosen-select" tabindex="-1">
+						 <option value=""></option>
+			            <option value="">Claas</option>
+			            <option value="">Geringhoff</option>
+			            <option value="">Fendt</option>
+			            <option value="">Sampo</option>
+			            <option value="">Case Ih</option>
+			            <option value="">New Holland</option>
+			            <option value="">Fortschritt</option>
+			            <option value="">John Deeree</option>
+			            <option value="">Deutz</option>
+			            <option value="">Oros</option>
+			            
+			         </select>
+				</div>
+				<div class="drop-down_list">
+					<h5>Модель</h5>
+					<select data-placeholder="UX 5200" class="chosen-select" tabindex="-1">
+						 <optgroup label="Claas">
+				            <option value=""></option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				          <optgroup label="Geringhoff">
+				            <option value=""></option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				          <optgroup label="Geringhoff">
+				            <option value=""></option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+				            <option value="">1220</option>
+				            <option value="">9075</option>
+				            <option value="">1220</option>
+			         </select>
+				</div>
+			</div>
 			<div class="minimenu">
 				<ul>
 					<li><a href="" class="active">Все</a></li>
@@ -519,8 +466,8 @@
 </div>
 
 	<div class="hidden"></div>
-
 	<script src="libs/jquery/jquery-3.2.1.slim.min.js"></script>
+	<script src="libs/chosen-master/chosen.jquery.js"></script>
 	<script src="js/common.js"></script>	
 </body>
 </html>
