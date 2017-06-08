@@ -1589,7 +1589,7 @@ a.all_parts:after {
 	flex-direction: column;
 	padding: 18px 16px 24px 16px;
 	background-color: #FFF;
-	z-index: 100;
+	z-index: 99;
 	border: 2px solid #eaa926;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
