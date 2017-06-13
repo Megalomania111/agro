@@ -753,11 +753,10 @@ body {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	-webkit-justify-content: space-between;
-	-moz-justify-content: space-between;
-	-ms-justify-content: space-between;
-	-o-justify-content: space-between;
-	justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 	    padding: 7px 10px 3px 8px;
 	border-bottom: 1px solid #e0e0e0;
 }

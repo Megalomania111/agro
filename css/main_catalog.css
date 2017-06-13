@@ -1,4 +1,4 @@
-body {
+﻿body {
 	background-color: #fff;
 }
 
@@ -55,16 +55,16 @@ body {
 	font-weight: 600;
 	line-height: 16px;
 	text-transform: uppercase;
-	text-align: left;
+	text-align: left
+	margin-bottom: 13px;
 }
 .filtr a.close_filtr {
 	display: none;
 }
 .filtr_block {
-	padding: 15px 7px 12px 6px;
+	padding: 15px 7px 15px 6px;
 	border: 1px solid #dedede;
 	border-bottom: none;
-	min-height: 83px;
 	position: relative;
 }
 .filtr_block:last-child {
