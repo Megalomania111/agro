@@ -368,27 +368,6 @@ jQuery(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-// кнопка поднятия страницы вверх
-	// var top_show = 10;
-	// var delay = 1000;
-	// jQuery(window).scroll(function() {
-	// 	if (jQuery(this).scrollTop() > top_show) jQuery('#scroll-top').fadeIn();
-	// 	else jQuery('#scroll-top').fadeOut();
-	// });
-	// jQuery('#scroll-top').click(function() {
-	// 	jQuery('body, html').animate({
-	// 		scrollTop: 0
-	// 	}, delay);
-	// });
-
 	// скрытие формы, если нажатие вне формы
 	// $(document).mouseout(function (e) {
 	// 	var container = $("choose_town_block ");
@@ -396,6 +375,9 @@ jQuery(document).ready(function(){
 	// 		container.hide();
 	// 	}
 	// });
+
+
+	
 	// jQuery(document).click(function(event) {
 	//      if (!jQuery(event.target).closest(jQuery(".choose_town_block ")).length){
 	//       jQuery(".choose_town_block ").toggleClass('active');
@@ -412,32 +394,21 @@ jQuery(document).ready(function(){
 
 
 
-// $ (window).scroll (function () {
-// if ($ (this).scrollTop () > 300) {
-// $ ('#scroll-top').fadeIn();
-// } else {
-// $ ('#scroll-top').fadeOut();
-// }
-// });
- 
-// $('#scroll-top').click(function(){
-// $('body,html').animate({
-// scrollTop: 0
-// }, 100);
-// return false;
-// });
 
 
-jQuery(document).ready(function(){
 
-    jQuery(window).scroll(function() {
-     if(jQuery(this).scrollTop() != 0) {
-     jQuery('#scroll-top').fadeIn();
-     } else {
-     jQuery('#scroll-top').fadeOut();
-     }
-     });
-     jQuery('#scroll-top').click(function() {
-     jQuery('body,html').animate({scrollTop:0},800);
-     });
-});
+// кнопка поднятия страницы вверх
+
+	var top_show = 10;
+	var delay = 1000;
+	jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > top_show) jQuery('#scroll-top').fadeIn();
+		else jQuery('#scroll-top').fadeOut();
+	});
+	jQuery('#scroll-top').click(function() {
+		jQuery('body, html').animate({
+			scrollTop: 0
+		}, delay);
+	});
+
+

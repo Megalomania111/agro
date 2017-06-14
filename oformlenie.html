@@ -231,108 +231,64 @@
 		<h1>Оформление заказа</h1>
 		<div class="formalization_order">
 			<div class="formalization_left">
-				<div class="contact_info">
-					<h2>1. Контактные данные</h2>
-					<label class="item-group">
-						<p class="item-group_title">Полное имя</p>
-						<p class="error-name hidden">Вы не указали имя</p>
-						<input type="text" value="Андрей Шевченко" class="item-group_input edit_private_name">
-					</label>
-					<label class="item-group">
-						<p class="error-name hidden">Вы не указали E-mail</p>
-						<p class="item-group_title">E-mail</p>
-						<input type="mail" value="shevchenko@gmail.com" class="item-group_input edit_private_email">
-					</label>
-					<label class="item-group">
-						<p class="error-name hidden">Вы не указали мобильный телефон</p>
-						<p class="item-group_title">Телефон</p>
-						<input type="text" value="+380 23 323-13-50" class="item-group_input edit_private_tel">
-					</label>
-					<button>Далее</button>
-				</div>
-				<div class="delivery_pay">
-					<h2>2. Выбор способов доставки и оплаты</h2>
-					<div class="delivery">
-						<h4 class="delivery_h4">Доставка</h4>
-						<div class="delivery_block">
-							<div class="delivery_itself">
-								<h5 class="delivery_h5">Самовывоз</h4>
-								<label for="delivery_itself_novaya" class="pay_label">
-									<input type="radio" class="formalization_input" name="formalization_delivery" id="delivery_itself_novaya" value="delivery_itself_novaya" checked>
-									<p class="delivery_pay_text">Новая Почта</p>
-								</label>
-								<label for="delivery_itself_ukr" class="pay_label">
-									<input type="radio" class="formalization_input" name="formalization_delivery" id="delivery_itself_ukr" value="delivery_itself_ukr">
-									<p class="delivery_pay_text">УкрПошта</p>
-								</label>
-								<label for="delivery_itself_mist" class="pay_label">
-									<input type="radio" class="formalization_input" name="formalization_delivery" id="delivery_itself_mist" value="delivery_itself_mist">
-									<p class="delivery_pay_text">МистЭкспресс</p>
-								</label>
-							</div>
-							<div class="delivery_courier">
-								<h5 class="delivery_h5">Курьер</h4>
-								<label for="delivery_courier_novaya" class="pay_label courier_novaya">
-									<input type="radio" class="formalization_input" name="formalization_delivery" id="delivery_courier_novaya" value="delivery_courier_novaya">
-									<p class="delivery_pay_text">Новая Почта</p>
-								</label>
-							</div>
-						</div>
-						<div class="delivery_city_selection">
-
-							<h4>Выберите город</h4>
-							<div class="dropdown_menu_city">
-								<select class="dropdown">
-								
-										<option>Арциз, Арцизский район, Одесская область</option>
-										<option>Арциз, Арцизский район, Одесская область</option>
-									
-									</select>
-							</div>
-							<div class="delivery_issue_point">
-								<h4>Выберите удобный пункт выдачи</h4>
-								<div class="dropdown_menu_punkt">
-									<select class="dropdown">
-									
-										<option>№5, ул. Академика Филатова, 24 (до 30кг)</option>
-										<option>№5, ул. Академика Филатова, 24 (до 30кг)</option>
-									
-									</select>
-								</div>
-							</div>
-							<div class="delivery_address">
-								<h4>Адрес доставки</h4>
-								<input type="text"  name="delivery_address_inp" value="ул. Шевченко 23, д. 13">
-							</div>
-							
-						</div>
+				<div class="contact_pay">
+					<div class="contact_info">
+						<h2>1. Контактные данные</h2>
+						<label class="item-group">
+							<p class="item-group_title">Полное имя</p>
+							<p class="error-name hidden">Вы не указали имя</p>
+							<input type="text" value="Андрей Шевченко" class="item-group_input edit_private_name">
+						</label>
+						<label class="item-group">
+							<p class="error-name hidden">Вы не указали E-mail</p>
+							<p class="item-group_title">E-mail</p>
+							<input type="mail" value="shevchenko@gmail.com" class="item-group_input edit_private_email">
+						</label>
+						<label class="item-group">
+							<p class="error-name hidden">Вы не указали мобильный телефон</p>
+							<p class="item-group_title">Телефон</p>
+							<input type="text" value="+380 23 323-13-50" class="item-group_input edit_private_tel">
+						</label>
 						
 					</div>
-					<div class="formalization_pay">
-						<h4 class="formalization_pay_h4">Оплата</h4>
-						<div class="formalization_pay_block">
-							<label for="pay_nal" class="pay_label">
-								<input type="radio" class="formalization_input" name="formalization_pay" id="pay_nal" value="pay_nal" checked>
-								<p class="delivery_pay_text">Наличными</p>
-							</label>
-							<label for="pay_beznal" class="pay_label pay_beznal_label">
-								<input type="radio" class="formalization_input" name="formalization_pay" id="pay_beznal" value="pay_beznal">
-								<p class="delivery_pay_text">Безналичный расчет</p>
-							</label>
-							<div class="beznal_kod">
-								<label for="beznal_kod_inp">
-									<h4>Код ЕГРПОУ</h4>
-									<input type="text"  name="beznal_kod_inp" id="beznal_kod_inp" value="0313131313131313131313">
-								</label>
-								<p>Отправим счет на оплату после оформления заказа на ваш e-mail</p>
+					<div class="delivery_pay">
+						<h2>2. Выбор способов доставки и оплаты</h2>
+						<div class="delivery">
+							<div class="delivery_city_selection">
+								<h4>Выберите город</h4>
+								<div class="dropdown_menu_city">
+									<select class="dropdown">
+										<option>Арциз, Арцизский район, Одесская область</option>
+										<option>Арциз, Арцизский район, Одесская область</option>
+									</select>
+								</div>
+								<div class="delivery_issue_point">
+									<h4>Выберите удобный пункт выдачи</h4>
+									<div class="dropdown_menu_punkt">
+										<select class="dropdown">
+											<option>№5, ул. Академика Филатова, 24 (до 30кг)</option>
+											<option>№5, ул. Академика Филатова, 24 (до 30кг)</option>
+										</select>
+									</div>
+								</div>
 							</div>
-							<label for="pay_24" class="pay_label">
-								<input type="radio" class="formalization_input" name="formalization_pay" id="pay_24" value="pay_24">
-								<p class="delivery_pay_text">Оплатить с помощью Privat24</p>
-							</label>
-							<button>Далее</button>
+						</div>
+						<div class="formalization_pay">
+							<h4 class="formalization_pay_h4">Оплата</h4>
+							<div class="formalization_pay_block">
+								<label for="pay_cart" class="pay_label">
+									<input type="radio" class="formalization_input" name="formalization_pay" id="pay_cart" value="pay_cart">
+									<p class="delivery_pay_text">Оплата на карту ПриватБанка</p>
+								</label>
+								<label for="pay_24" class="pay_label">
+									<input type="radio" class="formalization_input" name="formalization_pay" id="pay_24" value="pay_24">
+									<p class="delivery_pay_text">Oплата системой LiqPay (Privat24)</p>
+								</label>
+							</div>
 						</div>
 					</div>
+					
+					<button>Далее</button>
 				</div>
 				<div class="check_order">
 					<h2>3. Проверьте ваш заказ</h2>
@@ -342,7 +298,7 @@
 						<p class="private_tel">+380 68 323-13-12</p>
 						<p>Доставка: <span class="private_delivery">самовывоз с НовойПочты</span></p>
 						<p>Адрес отделения: <span class="private_delivery_address">№5 ул. Академика Филатова, 24</span></p>
-						<p class="private_pay">Оплата наличными</p>
+						<p class="private_pay">Оплата на карту ПриватБанка</p>
 					</div>
 					
 					<a href="javascript:void(0)" class="comment_order_add">Добавить комментарий к заказу</a>
@@ -491,6 +447,6 @@
 <script src="libs/jquery.mask.min.js"></script>
 <script src="libs/easydropdown/jquery.easydropdown.min.js"></script>
 <script src="js/common.js"></script>	
-<script src="js/oformlenie.js"></script>
+
 </body>
 </html>

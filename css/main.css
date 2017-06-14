@@ -3,20 +3,16 @@
 * {
 	box-sizing: border-box; 
 }
-body, 
-html {
-	height: 100%; 
-}
+
 body {
-	height: 100%;
 	background-color: #fafafa;
 	font-family: 'Fira Sans', sans-serif!important;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 14px;
 	position: relative;
-	min-width: 320px!important;
-	overflow-x: hidden;
+/*	min-width: 320px!important;
+	overflow-x: hidden;*/
 	margin: 0;
 }
 .hidden {
