@@ -229,6 +229,10 @@ margin-top: 0;
 	.katalogzapch_block_links a {
 		font-size: 15px;
 	}
+
+	.delivery_pay h2 {
+		margin-bottom: 2px;
+	}
 }
 @media only screen and (max-width : 1036px) {
 	.popular_cards .card,
@@ -351,9 +355,7 @@ margin-top: 0;
 	.formalization_card_img {
 		margin: 	10px auto; 
 		}*/
-		.formalization_card_info {
-			margin-top: 0;	
-		}
+		
 		.adaptive_block_header {
 			display: block;
 		}
@@ -372,6 +374,8 @@ margin-top: 0;
 /*	.adaptive_line_search .choose_town {
 		margin: auto;
 		}*/
+
+		
 	}
 
 	@media only screen and (max-width : 914px) {
@@ -741,10 +745,13 @@ margin-top: 0;
 			position: relative;
 		}
 		.formalization_left {
-			width: 57%;
+			width: 54%;
 		}
 		.formalization_right {
-			width: 43%;
+			width: 46%;
+		}
+		.delivery_pay h2 {
+			margin-bottom: 20px;
 		}
 
 	}
@@ -972,6 +979,38 @@ margin-top: 0;
 		.primenenie_list a {
 			font-size: 11px;
 		}
+		.formalization_order {
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			flex-direction: column;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+		.formalization_right {
+			margin-top: 40px;
+			min-width: 	290px;
+			margin-left: 0;
+			padding-left: 	10px;
+			padding-right: 10px;		
+		}
+		.formalization_left {
+			min-width: 268px;
+			width: 100%;
+		}
+		.contact_pay {
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+	}
+
+	@media only screen and (max-width : 670px) {
+
 	}
 	@media only screen and (max-width : 666px) {
 		.footer_section:nth-child(3),
@@ -1025,37 +1064,12 @@ margin-top: 0;
 		.history_orders .history_order_line p:after {
 			display: none;
 		}
-		.formalization_order {
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			flex-direction: column;
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			-ms-flex-align: center;
-			align-items: center;
-		}
-		.formalization_right {
-			margin-top: 40px;
-			min-width: 	270px;
-			margin-left: 0;
-			padding-left: 	10px;
-			padding-right: 10px;		
-		}
+		
 		.contact_info .item-group_input {
 			min-width: 255px;	
 		}
-		.formalization_left {
-			min-width: 268px;
-			width: 100%;
-		}
-		.contact_pay {
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			-ms-flex-align: center;
-			align-items: center;
-		}
+		
+		
 		.contact_info button,
 		.formalization_pay_block button {
 			margin: 5px auto;	

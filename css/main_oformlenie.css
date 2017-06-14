@@ -94,7 +94,7 @@ body {
 }
 .item-group_input {
 	width: 100%;
-	height: 34px;
+	height: 35px;
 	max-width: 340px;
 	padding-left: 13px;
 	color: #9e9e9e;
@@ -140,10 +140,11 @@ body {
 /*
 основной блок заказа. корзина*/
 .formalization_right {
-	height: auto;
+	max-height: 281px;
 	width: 36%;
+	
 	max-width: 710px;
-	min-height: 63px;
+	min-height: 232px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -199,6 +200,7 @@ body {
 .formalization_right_item {
 	/*width: 100%;*/
 	min-height: 60px;
+	margin: auto;
 	padding-bottom: 12px;
 	border-bottom: 1px solid #e8e8e8;
 	display: -webkit-flex;
@@ -218,6 +220,7 @@ body {
 	width: 230px;
 }
 .formalization_card_img {
+	display: none;
 	width: 80px;
 	height: 80px;
 	position: relative;	
@@ -334,7 +337,7 @@ body {
 .delivery_pay h4 {
 	color: #272727;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 16px;
 }
 .delivery_pay_text {
@@ -414,7 +417,8 @@ body {
 	flex-direction: column;
 }
 .formalization_pay h4 {
-	margin-bottom: 6px;
+	margin-bottom: 7px;
+	margin-top: 1px;
 }
 .formalization_pay_block {
 	display: -webkit-flex;
@@ -532,17 +536,22 @@ body {
 .dropdown_menu_city,
 .dropdown_menu_city .dropdown,
 .dropdown_menu_punkt,
-.dropdown_menu_punkt .dropdown  {
+.dropdown_menu_punkt .dropdown,
+.formalization_pay_block,
+.formalization_pay_block .dropdown {
 	width: 100%;
 	height: 35px;
 }
 .dropdown_menu_city .dropdown,
-.dropdown_menu_punkt .dropdown {
+.dropdown_menu_punkt .dropdown,
+.formalization_pay_block .dropdown {
 	border: 2px solid #f5f5f5;
 	outline: none;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 } 
+.formalization_pay_block .dropdown .selected,
+.formalization_pay_block .dropdown li,
 .dropdown_menu_city .dropdown .selected,
 .dropdown_menu_city .dropdown li,
 .dropdown_menu_punkt .dropdown .selected,
@@ -556,14 +565,17 @@ body {
 	font-weight: 300;
 	line-height: 14px;
 }
+.formalization_pay_block .dropdown .carat,
 .dropdown_menu_city .dropdown .carat,
 .dropdown_menu_punkt .dropdown .carat{
 	border-top-color: #272727;
 }
+.formalization_pay_block .dropdown.open .carat,
 .dropdown_menu_city .dropdown.open .carat,
 .dropdown_menu_punkt .dropdown.open .carat{
 	border-bottom-color: #272727;
 }
+.formalization_pay_block .dropdown.open div,
 .dropdown_menu_city .dropdown.open div,
 .dropdown_menu_punkt .dropdown.open div {
 	margin-top: 0;
@@ -571,14 +583,14 @@ body {
 }
 .delivery_city_selection h4 {
 	/*margin-top: 7px;*/
-	margin-bottom: 4px;
+	margin-bottom: 6px;
 }
 
 .delivery_address h4 {
 	margin-top: 20px;
 }
 .delivery_issue_point h4 {
-	margin-top: 15px;
+	margin-top: 12px;
 }
 .delivery_address input{
 	width: 100%;
@@ -836,4 +848,9 @@ body {
 }
 .comment_order_area.active{
 	display: block;
+}
+.formalization_right_items {
+	width: 100%;
+	max-height: 260px;
+	overflow-y: auto;
 }

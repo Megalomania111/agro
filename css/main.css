@@ -330,7 +330,7 @@ body {
 	position: absolute;
 	width: 100%;
 	max-width: 450px;
-	height: 480px;
+	min-height: 80px;
 	background-color: #fff;
 	display: none;
 	left: 0;
