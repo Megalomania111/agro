@@ -379,6 +379,17 @@ body {
 .searchlist_block:last-child {
 	border-bottom: none;
 }
+.searchlist_block:last-child .all_results_searchlist {
+	text-decoration: none;
+	color: #A4C83D;
+	font-size: 17px;
+	line-height: 16px;
+	font-weight: 400;
+	margin: auto 10px auto auto;
+}
+.searchlist_block:last-child {
+	height: 40px;
+}
 .searchlist_block:hover {
 	background-color: #f9f9f9;
 }
@@ -1575,7 +1586,7 @@ a.all_parts:after {
 	position: relative;
 }
 .openkorzina {
-	width: 330px;
+	width: 350px;
 	min-height: 135px;
 	display: none;
 	-webkit-flex-direction: column;
@@ -1615,7 +1626,17 @@ a.all_parts:after {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin-bottom: 13px;
-
+	position: relative;
+}
+.openkorzina_item:after {
+	position: absolute;
+    font-family: fontawesome !important;
+    color: #A4C83D;
+	top: 0px;
+    right: -22px;
+    content: '\f00d';
+    font-size: 20px;
+	cursor: pointer;
 }
 
 .openkorzina_item:last-child {
