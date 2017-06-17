@@ -398,7 +398,7 @@ jQuery(document).ready(function(){
 
 
 // кнопка поднятия страницы вверх
-
+	if (jQuery("#scroll-top").length){
 	var top_show = 10;
 	var delay = 1000;
 	jQuery(window).scroll(function() {
@@ -410,5 +410,5 @@ jQuery(document).ready(function(){
 			scrollTop: 0
 		}, delay);
 	});
-
+	}
 

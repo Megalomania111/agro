@@ -12,8 +12,8 @@ body {
 	line-height: 14px;
 	position: relative;
 /*	min-width: 320px!important;
-	overflow-x: hidden;*/
-	margin: 0;
+overflow-x: hidden;*/
+margin: 0;
 }
 .hidden {
 	display: none;
@@ -1077,7 +1077,7 @@ a.all_parts:after {
 }
 .card {
 	width: 250px;
-	height: 387px;
+	height: 407px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1113,6 +1113,12 @@ a.all_parts:after {
 	font-weight: 500;
 	line-height: 22px;
 	min-height: 44px;
+	display: -webkit-box;
+	height: 44px;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .card_info a {
 	text-decoration: none;
@@ -1142,7 +1148,7 @@ a.all_parts:after {
 .card_img {
 	width: 90%;
 	height: 200px;
-	margin: auto;
+	margin: 10px auto;
 	position: relative;
 	overflow: hidden;
 }
@@ -1630,12 +1636,12 @@ a.all_parts:after {
 }
 .openkorzina_item:after {
 	position: absolute;
-    font-family: fontawesome !important;
-    color: #A4C83D;
+	font-family: fontawesome !important;
+	color: #A4C83D;
 	top: 0px;
-    right: -22px;
-    content: '\f00d';
-    font-size: 20px;
+	right: -22px;
+	content: '\f00d';
+	font-size: 20px;
 	cursor: pointer;
 }
 
@@ -1643,19 +1649,20 @@ a.all_parts:after {
 	margin-bottom: 0;	
 }
 .openkorzina_items {
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	flex-direction: column;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	max-height: 189px;
-	overflow-y: auto;
-	position: relative;		
+	height: 189px;
+	overflow-y: scroll;
+	position: relative;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;		
 }
 .openkorzina_items:after{
 	content: "";
