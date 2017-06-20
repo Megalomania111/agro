@@ -56,7 +56,7 @@ body {
 .news:nth-child(3n+1) {
 	margin-left: 0;
 }
-.block_news {
+.block_news_page {
 	width: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;

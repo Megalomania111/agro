@@ -3,7 +3,7 @@ body {
 }
 
 .footer {
-	margin-top: 64px;
+	margin-top: 64px!important;
 }
 .main_spravochnik {
 	margin-top: 23px;
