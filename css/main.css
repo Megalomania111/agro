@@ -817,17 +817,17 @@ background-color: #fcbc3c;
 	color: #eaa926;
 	border-bottom: 3px solid #EAA926;
 }
-li:nth-child(2):hover .hover_jatka{
+li:nth-child(2):hover div{
 	display: flex;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 }
-.hover_jatka {
+.menu li > div {
 	position: absolute;
 	width: 340px;
-	height: 285px;
+	height: auto;
 	background-color: #FAFAFA;
 	display: none;
 	z-index: 2;
@@ -844,7 +844,7 @@ li:nth-child(2):hover .hover_jatka{
 	-o-transition: 0.2s all;
 	transition: 0.2s all;
 }
-.hover_jatka_brands {
+.menu li > div > div {
 	width: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -857,9 +857,9 @@ li:nth-child(2):hover .hover_jatka{
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.hover_jatka_brands ul {
+.menu li > div > div ul {
 	width: 100%;
-	height: 200px;
+	height: auto;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -874,11 +874,11 @@ li:nth-child(2):hover .hover_jatka{
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-.hover_jatka_brands li {
+.menu li > div > div li {
 	width: 50%;
 	height: 36px;
 }
-.hover_jatka_brands a {
+.menu li > div > div a {
 	display: inline;
 	padding: 0;
 	line-height: 17px;
@@ -888,18 +888,18 @@ li:nth-child(2):hover .hover_jatka{
 	font-weight: 500;
 	text-transform: uppercase;
 }
-.hover_jatka_brands a:hover{
+.menu li > div > div a:hover{
 	color: #a4c83d;
 	border-bottom: none;
 }
-.hover_jatka_brands a:before {
+.menu li > div > div a:before {
 	display: none;
 }
-.hover_jatka_brands li:first-child a {
+.menu li > div > div li:first-child a {
 	padding: 0;
 }
-.hover_jatka_brands a.all_parts {
-	display: inline;
+.menu li > div > div a.all_parts {
+	display: table;
 	height: 20px;
 	position: relative;
 	margin-top: 20px;
@@ -911,7 +911,7 @@ a.all_parts:after {
 	font-size: 18px;
 	position: absolute;
 	top: 0px;
-	left: 124px;
+	    right: -23px;
 }
 .hover_jatka_img  {
 	max-width: 48%;
