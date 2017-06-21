@@ -817,16 +817,17 @@ background-color: #fcbc3c;
 	color: #eaa926;
 	border-bottom: 3px solid #EAA926;
 }
-li:nth-child(2):hover div{
+li:hover .submenu{
 	display: flex;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 }
-.menu li > div {
+.submenu {
 	position: absolute;
-	width: 340px;
+	/*width: 340px;*/
+	width: auto;
 	height: auto;
 	background-color: #FAFAFA;
 	display: none;
@@ -844,7 +845,7 @@ li:nth-child(2):hover div{
 	-o-transition: 0.2s all;
 	transition: 0.2s all;
 }
-.menu li > div > div {
+.submenu > div {
 	width: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -857,7 +858,7 @@ li:nth-child(2):hover div{
 	-webkit-box-direction: normal;
 	flex-direction: column;
 }
-.menu li > div > div ul {
+.submenu > div ul {
 	width: 100%;
 	height: auto;
 	display: -webkit-flex;
@@ -874,11 +875,12 @@ li:nth-child(2):hover div{
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
-.menu li > div > div li {
-	width: 50%;
+.submenu > div li {
+	/*width: 50%;*/
+	width: 148px;
 	height: 36px;
 }
-.menu li > div > div a {
+.submenu > div a {
 	display: inline;
 	padding: 0;
 	line-height: 17px;
@@ -888,17 +890,17 @@ li:nth-child(2):hover div{
 	font-weight: 500;
 	text-transform: uppercase;
 }
-.menu li > div > div a:hover{
+.submenu > div a:hover{
 	color: #a4c83d;
 	border-bottom: none;
 }
-.menu li > div > div a:before {
+.submenu > div a:before {
 	display: none;
 }
-.menu li > div > div li:first-child a {
+.submenu > div li:first-child a {
 	padding: 0;
 }
-.menu li > div > div a.all_parts {
+.submenu > div a.all_parts {
 	display: table;
 	height: 20px;
 	position: relative;
@@ -2804,4 +2806,30 @@ p.forgot_password {
 }
 .drop-down_list:last-child .group-result {
 	width: 100%;
+}
+
+
+/*
+кнопка поднятия страницы вверх*/
+#scroll-top {
+	display: none;
+	position: fixed;
+	right: 5%;
+	bottom: 9%;
+	width: 38px;
+	height: 38px;
+	box-shadow: 0px 0px 10px 0px rgba(234, 169, 38, 0.23);
+	z-index: 100;
+	border-width: 1px;
+	border-color: rgb(234, 169, 38);
+	border-style: solid;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#scroll-top i {
+	color: #EAA926;
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	font-size: 17px;
 }
