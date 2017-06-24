@@ -1492,6 +1492,10 @@ margin: auto;
 		margin-bottom: 15px;
 		margin-right: 0;
 	}
+	.popap_regist {
+		max-width: none;
+		width: 90%;
+	}
 }
 @media only screen and (max-width: 536px) {
 	.onenews--right__previews {
@@ -1523,6 +1527,10 @@ margin: auto;
 		position: absolute;
 		right: 57px;
 		top: 0;
+	}
+	.popap_entrance {
+		max-width: none;
+		width: 90%;
 	}
 }
 
@@ -1691,8 +1699,7 @@ text-align: center;
 	.popap_vostanovl_otpravl__content,
 	.popap_regist_suc__content,
 	.popap_vostanovl_content,
-	.popap_entrance__content,
-	.popap_regist__content {
+	.popap__otz_thanks_content{
 		width: 85%;
 	}
 	.popap_call_main h3,
@@ -1982,6 +1989,17 @@ text-align: center;
 		font-size: 13px!important;
 		line-height: 20px!important;	
 	}
+	.popap_entrance__main h3 {
+		font-size: 22px;
+	}
+	.popap_entrance__main p {
+		font-size: 15px;
+	}
+	p.forgot_password {
+		margin-bottom: 0;
+		font-size: 13px;
+		margin-top: 22px;
+	}
 
 }
 @media only screen and (max-width : 390px) {
@@ -1990,9 +2008,16 @@ text-align: center;
 	.popap_vostanovl_otpravl__content,
 	.popap_regist_suc__content,
 	.popap_vostanovl_content,
-	.popap_entrance__content,
-	.popap_regist__content {
+	.popap__otz_thanks_content {
 		width: 90%;
+	}
+	.popap__otz_thanks_main h3 {
+		font-size: 20px;
+	}
+	.popap__otz_thanks_main p {
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 16px;
 	}
 	.popap_entrance__main h3 {
 		font-size: 20px;
@@ -2030,7 +2055,12 @@ text-align: center;
 		margin-left: 0;
 		margin-top: 3px;
 	}
-
+	.popap_entrance-submit, .popap_entrance-submit_new {
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width : 380px) {
+	
 }
 @media only screen and (max-width : 375px) {
 	.footer_section {
@@ -2100,8 +2130,16 @@ min-width: 130px;
 		min-width: 70px;
 		width: 70px;		
 	}
-
-
+	.popap_regist__main h3 {
+		font-size: 22px;
+	}
+	.popap_regist__main p {
+		font-size: 15px;
+		margin-top: 14px;
+	}
+	.agreement {
+		font-size: 13px;
+	}
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 350px) {
@@ -2129,6 +2167,9 @@ min-width: 130px;
 	.popap_entrance-submit,
 	.popap_regist-submit {
 		font-size: 14px;
+	}
+	.popap_entrance__main h3 {
+		font-size: 18px;
 	}
 }
 

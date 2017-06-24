@@ -85,6 +85,10 @@ body {
 	margin-bottom: 12px;
 	position: relative;	
 }
+
+.item-group::-webkit-input-placeholder  {
+	color: #dedede;
+}
 .item-group_title {
 	color: #272727;
 	font-size: 16px;
@@ -97,7 +101,7 @@ body {
 	height: 35px;
 	max-width: 340px;
 	padding-left: 13px;
-	color: #9e9e9e;
+	color: #212121;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 14px;
@@ -249,10 +253,12 @@ body {
 }
 .formalization_card_info .card_info_title {
 	color: #212121;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 500;
 	line-height: 15px;
 	min-height: 15px;
+	height: auto;
+	margin-bottom: 6px;
 }
 .formalization_card_info .card_info_code p,
 .formalization_card_info .product_number {
