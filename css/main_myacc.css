@@ -77,7 +77,7 @@ body {
 	position: absolute;
 	right: 0;
 	top: 27px;
-	content: '';
+	
 	color: #a4c83d;
 	font-size: 14px;
 	font-weight: 400;
@@ -86,7 +86,19 @@ body {
 	border-bottom: 1px dashed #a4c83d;
 	text-decoration: none;
 }
-
+.change_your_password {
+	position: absolute;
+	right: 0;
+	top: 50px;
+	color: #a4c83d;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	padding-bottom: 1px;
+	border-bottom: 1px dashed #a4c83d;
+	text-decoration: none;
+		
+}
 .myacc_private {
 	width: 100%;
 	height: auto;
@@ -271,7 +283,7 @@ p.order_status-not_done {
 .edit_private {
 	width: 100%;
 	height: auto;
-	display: none;
+	
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	-webkit-box-orient: vertical;
@@ -289,16 +301,12 @@ p.order_status-not_done {
 }
 .edit_private_items {
 	width: 100%;
-	min-height: 257px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	-webkit-justify-content: space-between;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+	
 }
 .edit_private_item {
 	width: 31%;
@@ -316,6 +324,9 @@ p.order_status-not_done {
 }
 .item-group::-webkit-input-placeholder  {
 	color: #dedede;
+}
+.edit_private_item:first-child {
+	margin-right: 20px;
 }
 
 .item-group {
@@ -401,17 +412,7 @@ p.order_status-not_done {
 .item_edit_pass .item-group:first-child {
 	position: relative;
 }
-.change_your_password {
-	position: absolute;
-	right: 0;
-	top: 3px;
-	text-decoration: none;
-	color: #a4c83d;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 12px;
-		
-}
+
 
 /*
 кнопки*/

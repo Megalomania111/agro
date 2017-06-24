@@ -829,8 +829,8 @@ li:hover .submenu{
 }
 .submenu {
 	position: absolute;
-	/*width: 340px;*/
-	width: auto;
+	width: 340px;
+	
 	height: auto;
 	background-color: #FAFAFA;
 	display: none;
@@ -879,8 +879,8 @@ li:hover .submenu{
 	flex-wrap: wrap;
 }
 .submenu > div li {
-	/*width: 50%;*/
-	width: 148px;
+	width: 50%;
+	/*width: 148px;*/
 	height: 36px;
 }
 .submenu > div a {
@@ -1393,25 +1393,13 @@ a.all_parts:after {
 Попап восстановление*/
 .popap_vostanovl {
 	width:100%;
-	min-height:100%;
-	background-color: rgba(0,0,0,0.5);
-	overflow:hidden;
-	position:fixed;
-	top:0px;
-	z-index: 10;
+	margin: auto;
+	max-width: 500px;
+	background-color: #FFF;
+	margin-top: 50px;
 }
 .popap_vostanovl_content {
-	width: 410px;
-	position: absolute;
-	background-color: #fff;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-o-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	box-shadow: 0px 0px 3px #000;
-	z-index: 100;
+	width: 100%;
 }
 
 .popap_vostanovl_main {
@@ -1437,15 +1425,17 @@ a.all_parts:after {
 	font-weight: 400;
 	line-height: 24px;
 	margin-bottom: 20px;
-	text-align: left !important;
+	text-align: center;
 }
 .popap_vostanovl_main p {
 	color: #272727;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 300;
 	line-height: 16px;
 	margin-bottom: 14px;
+	
 }
+
 .popap_vostanovl_main a {
 	position: absolute;
 	background-color: transparent;
@@ -1515,26 +1505,14 @@ a.all_parts:after {
 
 /*Попап окно "пароль отправлено"*/
 .popap_vostanovl_otpravl {
-	width:100%;
-	min-height:100%;
-	background-color: rgba(0,0,0,0.5);
-	overflow:hidden;
-	position:fixed;
-	top:0px;
-	z-index: 10;
+		width:100%;
+	margin: auto;
+	max-width: 500px;
+	background-color: #FFF;
+	margin-top: 50px;
 }
 .popap_vostanovl_otpravl__content {
-	width: 410px;
-	position: absolute;
-	background-color: #fff;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-o-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	box-shadow: 0px 0px 3px #000;
-	z-index: 100;
+		width: 100%;
 }
 
 .popap_vostanovl_otpravl__main {
@@ -2186,26 +2164,13 @@ p.forgot_password {
 /*Попап окно "регистрация_успешно"*/
 .popap_regist_suc {
 	width:100%;
-	min-height:100%;
-	background-color: rgba(0,0,0,0.5);
-	overflow:hidden;
-	position:fixed;
-	top:0px;
-	z-index: 10;
+	margin: auto;
+	max-width: 500px;
+	background-color: #FFF;
+	margin-top: 50px;
 }
 .popap_regist_suc__content {
-	width: 410px;
-	height: 555px;
-	position: absolute;
-	background-color: #fff;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-o-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	box-shadow: 0px 0px 3px #000;
-	z-index: 100;
+	width: 100%;
 }
 
 .popap_regist_suc__main {
@@ -2229,7 +2194,7 @@ p.forgot_password {
 
 }
 .popap_regist_suc__main {
-	padding: 184px 30px 40px 30px;
+	padding: 40px 30px 40px 30px;
 }
 
 .popap_regist_suc__main h3 {

@@ -591,7 +591,12 @@ margin: auto;
 		width: 100%;
 		max-width: 275px;
 		margin-bottom: 20px;
+		
 	}
+	.edit_private_item:first-child {
+		margin-right: 0;
+	}
+
 }
 @media only screen and (max-width : 898px) {
 	.news {
@@ -1492,7 +1497,10 @@ margin: auto;
 		margin-bottom: 15px;
 		margin-right: 0;
 	}
-	.popap_regist {
+	.popap_regist,
+	.popap_regist_suc,
+	.popap_vostanovl,
+	.popap_vostanovl_otpravl {
 		max-width: none;
 		width: 90%;
 	}
@@ -1696,9 +1704,6 @@ text-align: center;
 	}
 	.popap_call_content,
 	.popap_thanks_content,
-	.popap_vostanovl_otpravl__content,
-	.popap_regist_suc__content,
-	.popap_vostanovl_content,
 	.popap__otz_thanks_content{
 		width: 85%;
 	}
@@ -1708,12 +1713,7 @@ text-align: center;
 	.popap_regist_suc__main h3 {
 		font-size: 21px;	
 	}
-	.popap_regist_suc__content {
-		height: 450px;	
-	}
-	.popap_regist_suc__main {
-		padding: 133px 30px 40px 30px;
-	}
+	
 	.popap_vostanovl_main h3 {
 
 		font-size: 21px;
@@ -1738,6 +1738,7 @@ text-align: center;
 		right: 22px;
 		top: 0;
 	}
+
 }
 @media only screen and (max-width : 440px) {
 	.drop-down_list:last-child .chosen-drop {
@@ -1944,6 +1945,11 @@ text-align: center;
 		text-align: center;
 		top: 18px;
 	}
+	.change_your_password {
+		 width: 62px;
+		 text-align: center;
+		top: 52px;
+	}
 	.history_orders .history_order_line h5 {
 
 		margin-bottom:5px;
@@ -2005,9 +2011,6 @@ text-align: center;
 @media only screen and (max-width : 390px) {
 	.popap_call_content,
 	.popap_thanks_content,
-	.popap_vostanovl_otpravl__content,
-	.popap_regist_suc__content,
-	.popap_vostanovl_content,
 	.popap__otz_thanks_content {
 		width: 90%;
 	}
@@ -2058,9 +2061,26 @@ text-align: center;
 	.popap_entrance-submit, .popap_entrance-submit_new {
 		font-size: 13px;
 	}
+	.popap_vostanovl_otpravl__main h3 {
+		margin-bottom: 25px;
+		font-size: 20px;
+	}
+	.popap_vostanovl_otpravl__main p {
+		font-size: 16px;
+	}
+
 }
 @media only screen and (max-width : 380px) {
-	
+	.popap_regist_suc__main h3 {
+		font-size: 19px;
+		margin-bottom: 25px;
+	}
+	.popap_regist_suc__main p{
+		font-size: 16px;
+	}
+	.popap_vostanovl-submit {
+		font-size: 15px;
+	}
 }
 @media only screen and (max-width : 375px) {
 	.footer_section {

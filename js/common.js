@@ -305,6 +305,7 @@ jQuery(document).ready(function(){
 		jQuery(".myacc_page_block").addClass("switching");
 		jQuery(".edit_private").addClass("active");
 		jQuery(this).remove();
+		jQuery(".change_your_password").remove();
 	});
 
 
