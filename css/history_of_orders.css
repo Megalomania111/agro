@@ -1,0 +1,344 @@
+
+.history_order_page {
+	margin-top: 20px;
+}
+.history_order_page .block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+}
+.history_order_page h1 {
+	color: #282828;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 24px;
+	margin-bottom: 16px;
+	
+}
+/*блок личные данные. история*/
+.myacc_history {
+	padding-top: 27px;
+	width: 100%;
+	height: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+}
+
+.history_orders {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+}
+.history_order {
+	width: 100%;
+	min-height: 50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 21px;
+	padding-bottom: 16px;
+	border-bottom: 3px solid #272727;
+	cursor: pointer;
+	
+}
+
+.history_order_link {
+	text-decoration: none;
+	color: #212121;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	padding-bottom: 2px;
+	
+}
+.history_order_link:hover,
+.history_order_link:active,
+.history_order_link.active {
+	color: #eaa926;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #eaa926;
+}
+.history_order_line {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.history_order p:first-child span{
+	color: #272727;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+	
+}
+.history_order p:first-child {
+	color: #272727;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+	
+}
+.history_order p {
+	color: #272727;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 16px;
+	padding-right: 12px;
+	padding-left: 10px;
+	position: relative;
+}
+.history_order p:after {
+	position: absolute;
+	content: '';
+	height: 14px;
+	width: 1px;
+	top: 1px;
+	right: 0;
+	background-color: #e0e0e0;
+}
+.history_order p:last-child {
+	padding-right: 0;
+}
+.history_order p:last-child:after {
+	display: none;
+}
+.history_order p span{
+	font-weight: 400;
+}
+p.history_order_calculation_type {
+	color: #eaa926;
+}
+p.order_status-fulfilled {
+	color: #a4c83d;
+}
+p.order_status-not_done {
+	color: #ef5350;
+}
+.switching {
+	display: none!important;	
+}
+.myacc_page_block {
+	display: block;
+}
+
+
+.history_order_open {
+	width: 100%;
+	height: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	opacity: 0;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	-ms-transition: 0.3s all;
+	-o-transition: 0.3s all;
+	transition: 0.3s all;
+	padding-top: 10px;
+	
+}
+.history_order_open.active {
+	opacity: 1;
+	
+	height: 100%;
+}
+
+
+/*.history_order_open {
+	width: 100%;
+	height: auto;
+display: none;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	-ms-transition: 0.3s all;
+	-o-transition: 0.3s all;
+	transition: 0.3s all;
+	padding-top: 10px;
+	
+}
+.history_order_open.active {
+		display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}*/
+.history_order_open p {
+	color: #272727;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 16px;
+	
+	position: relative;
+	margin-bottom: 10px;
+}
+.history_order_open p span {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 16px;
+}
+.history_order_open__cards {
+	width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-top: 20px;
+}
+.history_order_card {
+	border-top: 1px solid #e8e8e8;
+	min-height: 88px;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+	position: relative;	
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.history_order_card_img {
+	width: 66px;
+	height: 66px;
+	position: relative;	
+	overflow: hidden;				
+}
+.history_order_card_img img {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.history_order_card_info {
+	margin-left: 20px;
+	width: 345px;
+	height: auto;
+}
+.history_order_card_block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.history_order_card_info a {
+	text-decoration: none;
+}
+
+.card_info_title {
+
+	min-height: 22px!important;
+	height: auto !important;
+
+}
+.history_order_card_status,
+.history_order_status_right,
+.history_order_status_total {
+	text-align: center;
+}
+.history_order_card_status p:first-child,
+.history_order_status_right p:first-child,
+.history_order_status_total p:first-child,
+.history_order_card_status p:first-child span,
+.history_order_status_right p:first-child span,
+.history_order_status_total p:first-child span {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
+
+.history_order_info .card_info_title{
+	min-height: 18px;
+}
+.history_order_card .product_price {
+	color: #272727;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.history_order_card_info .card_info_code p,
+.history_order_card_info .card_info_code p span {
+    color: #9e9e9e;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+}
+.total_price_text {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-top: 10px;
+    -webkit-justify-content: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+   
+}
+.total_price_text p {
+	 border-top: 1px solid #e8e8e8;
+    width: 50%;
+    text-align: right;
+    padding-top: 10px;
+}
